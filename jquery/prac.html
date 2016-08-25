@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+
+
+<div class="container" align="center">
+<!-- <div class="jumbotron">
+<h1>Let's have fun</h1>
+<button class="panel-button" data-panelid="panel1">#btn1</button>
+<button class="panel-button" data-panelid="panel2">#btn2</button>
+<button id="btn3" data-panelid="panel3">#btn3</button>
+<button id="btn4" data-panelid="panel4">#btn4</button>	
+</div>
+
+<div class="row"> -->
+
+<!-- <div class="col-md-4">
+<div id="panel1" class="panel panel-primary">
+<div class="panel-heading">#panel1</div>
+<div class="panel-body">content</div>	
+</div>
+</div>
+
+<div class="col-md-4">
+<div id="panel2" class="panel panel-primary">
+<div class="panel-heading">#panel2</div>
+<div class="panel-body">content</div>	
+</div>
+</div>
+
+<div class="col-md-4">
+<div id="panel3" class="panel panel-primary">
+<div class="panel-heading">#panel3</div>
+<div class="panel-body">content</div>	
+</div>
+
+</div>
+
+ -->
+ 	
+<!--  </div>
+ -->
+
+<div class="tab-panels">
+<ul class="tabs">
+	<li rel="panel1" class="active">panel1</li>
+	<li rel="panel2">panel2</li>
+    <li rel="panel3">panel3</li>
+
+</ul>
+<div id="panel1" class="panel active">
+content1</br>
+content2</br>
+content3</br>
+content4</br>
+</div>
+<div id="panel2" class="panel">
+content1</br>
+content2</br>
+content3</br>
+content4</br>
+</div>
+<div id="panel3" class="panel">
+content1</br>
+content2</br>
+content3</br>
+content4</br>
+</div>
+<div id="panel4" class="panel">
+content1</br>
+content2</br>
+content3</br>
+content4</br>
+</div>
+</div>
+
+<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+
+<script>
+	$(function(){
+		
+		$('.tab-panels .tabs li').on('click', function(){
+			console.log("ashu");
+			var panelToShow=$(this).attr('rel');	
+			 $('.tab-panels .panel.active').slideUp(300,function(){
+			 	alert();
+			 })
+		});
+
+			
+		});
+
+</script>
+
+</body>
+</html>
